@@ -1,0 +1,32 @@
+prog ordenacao
+	int i,j,aux, num[5];
+	imprima "Digite 5 numeros\n";
+	para (i<-0; i<5; i++)
+	{
+		leia num[i];
+	}		
+	para (i<-0;i<4;i++)
+	{
+		para (j<- i+1;j<5;j++)
+		{	
+			se (num[i] > num[j])
+			{
+				aux <- num[i];
+				num[i] <- num[j];
+				num[j] <- aux;
+			}
+		}
+	}
+	imprima "Os numeros \nordenados sao:\n";
+	para (i<-0;i<5;i++)
+	{
+		imprima num[i], " ";
+	}
+fimprog
+
+	
+
+
+
+
+

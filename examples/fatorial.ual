@@ -1,0 +1,27 @@
+prog fatorial
+	int fat, i, num;
+	imprima "Digite um \nnumero inteiro: \n";
+	leia num;
+	i <- num;
+	fat <- num;
+	se (fat < 0)
+	{
+		imprima "\nNumero invalido.\n";
+	}
+	senao
+	{
+		se (fat == 0)
+		{
+				imprima "\nO fatorial \nde 0 e 1.\n";
+		}
+		senao
+		{
+			enquanto (i>1)
+			{
+				i <- i - 1;
+				fat <- fat * i;
+			}
+				imprima "\nO fatorial \nde ", num, " e ", fat, ".\n";
+		}
+	}
+fimprog
